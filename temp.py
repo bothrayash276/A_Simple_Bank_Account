@@ -1,6 +1,14 @@
 import pandas as pd
-# file = pd.read_excel("ExcelFile.xlsx", sheet_name="she1", index=False)
+def func(name,age,number):
+    file = pd.DataFrame(
+        {
+            "15654321" : [name, age,number]
+        }
+    )
+    file.to_csv("transaction/15654321.csv")
 
-file = pd.read_csv("BankDetails.csv")
-t  = file.loc[2,"259"]
+# func("yash",18,1235)
+
+fi = "yassbothra"
+t = str(fi)
 print(t)
